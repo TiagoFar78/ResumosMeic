@@ -330,13 +330,13 @@ VT = Valid Transition, PSP = Possible sneak path, ? = Conditional Transition
 
 | Events \ State | Open | Overdrawn | Frozen | Inactive | Closed |
 | -------------- | ---- | --------- | ------ | -------- | ------ |
-| credit | VP | ? | PSP | PSP | PSP |
+| credit | VT | ? | PSP | PSP | PSP |
 | debit | ? | ? | PSP | PSP | PSP |
-| balance | VP | VP | VP | VP | PSP |
-| freeze | VP | PSP | PSP | PSP | PSP |
-| unfreeze | PSP | PSP | VP | PSP | PSP |
-| settle | PSP | PSP | PSP | VP | PSP |
-| 5 years | VP | PSP | PSP | PSP | PSP |
+| balance | VT | VT | VT | VT | PSP |
+| freeze | VT | PSP | PSP | PSP | PSP |
+| unfreeze | PSP | PSP | VT | PSP | PSP |
+| settle | PSP | PSP | PSP | VT | PSP |
+| 5 years | VT | PSP | PSP | PSP | PSP |
 | close | ? | PSP | PSP | PSP | PSP |
 
 Add PSP to the transition tree

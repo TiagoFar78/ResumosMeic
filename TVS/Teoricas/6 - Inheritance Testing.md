@@ -226,7 +226,7 @@ Sometimes, it is quite hard to create the situation that will cause the error.
 
 For example an error writing to a file because the file system is full.
 
-```
+```java
 class Example {
   private FileOutputSystem fos;
   // ...
@@ -244,7 +244,7 @@ class Example {
 }
 ```
 
-```
+```java
 class FullSystem extends FileOutputSystem {
   public FullSystem(String path) {
     super(path);
@@ -257,8 +257,9 @@ class FullSystem extends FileOutputSystem {
 }
 ```
 
-```
-@Test public void testFileSystemFull() {
+```java
+@Test 
+public void testFileSystemFull() {
   Example f = new Example(new FullSystem("foo"));
   try {
     // ...
