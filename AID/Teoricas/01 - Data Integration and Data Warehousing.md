@@ -10,6 +10,11 @@ Process:
 
 ![Data Integration](Imagens/01%20-%20Data%20Integration.png)
 
+Advantages:
+- Fast.
+- Can query over time.
+- Does not rely on the availability of the sources.
+
 # Data Warehousing
 
 Provide a centralized repository of cleaned and transformed data for long-term analysis. Data is physically stored in a central repository. Optimized for historical analysis, trend detection, and business intelligence. ETL processes run regularly to keep warehouse up-to-date.
@@ -30,3 +35,7 @@ Process:
 - Data Warehousing = Physical, storage-driven, structured repository for historical analysis.
 
 ![Data Integration vs Data Warehousing](Imagens/01%20-%20Data%20Integration%20vs%20Data%20Warehousing.png)
+
+Advantages:
+- Real-time data
+- Doesn't take space
