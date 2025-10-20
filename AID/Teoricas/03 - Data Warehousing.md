@@ -170,3 +170,45 @@ Granularity of time dimension depends on use. If we are interested in monthly da
 Time dimension may have more than one hierarchy. E.g. fiscal and calendar year.
 
 Time dimension should be populated automatically by a script.
+
+# Population
+
+The population of a data warehouse involves one transformation for each dimension table, one transformation for the fact table and a job that runs all transformations in the correct sequence. 
+
+Each dimension table will be populated with relevant information and a surrogate key. This way we will have a smaller amount of rows in each dimension table than what it is in the original data table.
+
+The facts table should be populated after because its primary key will be a combination of the primary keys of all the dimension tables. Knowing this, the facts table will have the same amount of rows as the original data table. The facts table should also contain the measures.
+
+For example, if we have an original data table with information of houses sold in Portugal like
+
+| sales |
+| --------------- |
+| transaction_id |
+| price |
+| date |
+| postcode |
+| house number |
+| city |
+
+Our dimensions and fact table would look like:
+
+| dim_location |
+| ------------ |
+| location_id |
+| postcode |
+| house number |
+| city |
+
+| dim_time |
+| -------- |
+| time_id |
+| year |
+| month |
+| month_name |
+| day |
+
+| facts_table |
+| ----------- |
+| location_id |
+| time_id |
+| price |
