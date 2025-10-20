@@ -212,3 +212,19 @@ Our dimensions and fact table would look like:
 | location_id |
 | time_id |
 | price |
+
+# Slowly Changing Dimensions (SCD)
+
+## Types
+
+- Type 0: Retain original - Do not update with new value.
+- Type 1: Overwrite old value with new value.
+- Type 2: Add row - Store multiple versions of the same product. Add two columns with validity interval (from date, to date).
+  - Can also have a variant with a new column called "row status".
+- Type 3: Add column - Use additional column for each attribute that might change. The new column is named "new \<field>" and all the records are null except the one that changed. 
+- Type 4: Add mini-dimension for frequently changing attributes.
+- Type 5: Add mini-dimension along with FK in base dimension.
+- Type 6: Add new row with validity interval plus additional column for current value.
+- Type 7: Add new row with validity interval plus view with current values by natural key or surrogate key.
+
+Real-world OLAP software and tools typically, provide support for SCDs of Type 1, Type 2, and Type 3.
