@@ -81,3 +81,7 @@ Data can be viewed as a cube.
 - Puts together two cubes with similar axis but different information.
 
 ![Drill-across](Imagens/04%20-%20Drill-across.png)
+
+## Cube definition
+
+Cube definition in an XML file and can be created manually. However, it is better to use tools like Pentaho Schema Workbench.
