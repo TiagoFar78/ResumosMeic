@@ -5,7 +5,7 @@
 - [x] BIM-Based Method for the Verification of Building Code Compliance, [WebPage](https://www.mdpi.com/2571-5577/5/4/64), [Saved](Papers/BIM-Based%20Method%20for%20the%20Verification%20of%20Building%20Code%20Compliance.pdf)
 - [x] A Vision for Automated Building Code Compliance Checking by Unifying Hybrid Knowledge Graphs and Large Language Models, [WebPage](https://www.researchgate.net/publication/395297094_A_Vision_for_Automated_Building_Code_Compliance_Checking_by_Unifying_Hybrid_Knowledge_Graphs_and_Large_Language_Models), [Saved](Papers/A%20Vision%20for%20Automated%20Building%20Code%20Compliance%20Checking%20by%20Unifying%20Hybrid%20Knowledge%20Graphs%20and%20Large%20Language%20Models.pdf)
 - [ ] _Maybe Trash_ The Ups and Downs of Automated Code Checking Software, [WebPage](https://www.construction-physics.com/p/the-ups-and-downs-of-automated-code)
-- [ ] Automated Code Compliance Checking: A computational workflow for verifying model, parameter and regulatory compliance, [WebPage](https://www.academia.edu/101918035/Automated_Code_Compliance_Checking_A_computational_workflow_for_verifying_model_parameter_and_regulatory_compliance), [Saved](Papers/Automated%20Code%20Compliance%20Checking%20A%20computational%20workflow%20for%20verifying%20model,%20parameter%20and%20regulatory%20compliance.pdf)
+- [x] Automated Code Compliance Checking: A computational workflow for verifying model, parameter and regulatory compliance, [WebPage](https://www.academia.edu/101918035/Automated_Code_Compliance_Checking_A_computational_workflow_for_verifying_model_parameter_and_regulatory_compliance), [Saved](Papers/Automated%20Code%20Compliance%20Checking%20A%20computational%20workflow%20for%20verifying%20model,%20parameter%20and%20regulatory%20compliance.pdf)
 - [ ] Automated code compliance checking research based on BIM and knowledge graph, [WebPage](https://www.nature.com/articles/s41598-023-34342-1), [Saved](Papers/Automated%20code%20compliance%20checking%20research%20based%20on%20BIM%20and%20knowledge%20graph.pdf)
 - [ ] Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase, [WebPage](https://papers.cumincad.org/data/works/att/ecaade2022_136.pdf), [Saved](Papers/Establishment%20of%20Database%20for%20Automated%20Building%20Codes%20Compliance%20Checking%20in%20the%20Pre-Design%20Phase.pdf)
 - [ ] Automatic Rule-Based Checking for the Approval of Building Architectural Designs of Airport Passenger Terminals based on BIM, [WebPage](https://papers.cumincad.org/data/works/att/ecaadesigradi2019_613.pdf), [Saved](Papers/Automatic%20Rule-Based%20Checking%20for%20the%20Approval%20of%20Building%20Architectural%20Designs%20of%20Airport%20Passenger%20Terminals%20based%20on%20BIM.pdf)
@@ -68,3 +68,14 @@ On the positive side, transforming IFC files into knowledge graphs is a strong c
 However, the rest of the system is less efficient in practice. Adding a new regulation requires significant data preprocessing—segmenting and structuring text before it can be used. Moreover, each rule must be queried separately, meaning that the framework doesn’t handle full regulation sets seamlessly. Since the LLMs are mainly used to generate Graph Query Language (GQL) queries, a fully automated system could theoretically be built without LLMs if all queries were manually prepared in advance.
 
 The authors claim scalability, but their demonstration focuses only on fire protection requirements, producing a graph with just 14 nodes. Additionally, relying on AI models introduces the risk of errors.
+
+# Automated Code Compliance Checking: A computational workflow for verifying model, parameter and regulatory compliance
+
+The paper presents a transparent and customizable computational workflow to automatically verify building models for code compliance, focusing on checking doors against Australian regulations AS1428.1:2021.
+
+To determine whether a door respects the regulation, the researchers built a workflow in Grasshopper integrated with Revit via Rhino.Inside.Revit. The process begins by extracting Revit door parameters such as width, height, and thickness. The script then performs two main checks: model compliance and regulatory compliance. Model compliance ensures that each door’s parameters and geometry match its defined type data, while regulatory compliance involves testing geometric conditions derived from AS1428.1.
+
+As a limitation, the process currently takes about 30 seconds to check 11 doors.
+
+_Information about how they made regulatory compliance can be found on their section "FINALISED ITERATION – REGULATORY AND CODE COMPLIANCE"_
+
