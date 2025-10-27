@@ -11,9 +11,8 @@ Process:
 ![Data Integration](Imagens/01%20-%20Data%20Integration.png)
 
 Advantages:
-- Fast.
-- Can query over time.
-- Does not rely on the availability of the sources.
+- Real-time data
+- Doesn't take space
 
 # Data Warehousing
 
@@ -29,13 +28,14 @@ Process:
 
 ![Data Warehousing](Imagens/01%20-%20Data%20Warehousing.png)
 
+Advantages:
+- Fast.
+- Can query over time.
+- Does not rely on the availability of the sources.
+
 ### Data Integration vs Data Warehousing
 
 - Data Integration = Virtual, query-driven, real-time access to multiple sources.
 - Data Warehousing = Physical, storage-driven, structured repository for historical analysis.
 
 ![Data Integration vs Data Warehousing](Imagens/01%20-%20Data%20Integration%20vs%20Data%20Warehousing.png)
-
-Advantages:
-- Real-time data
-- Doesn't take space
