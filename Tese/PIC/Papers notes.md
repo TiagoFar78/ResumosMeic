@@ -6,7 +6,7 @@
 - [x] A Vision for Automated Building Code Compliance Checking by Unifying Hybrid Knowledge Graphs and Large Language Models, [WebPage](https://www.researchgate.net/publication/395297094_A_Vision_for_Automated_Building_Code_Compliance_Checking_by_Unifying_Hybrid_Knowledge_Graphs_and_Large_Language_Models), [Saved](Papers/A%20Vision%20for%20Automated%20Building%20Code%20Compliance%20Checking%20by%20Unifying%20Hybrid%20Knowledge%20Graphs%20and%20Large%20Language%20Models.pdf)
 - [ ] _Maybe Trash_ The Ups and Downs of Automated Code Checking Software, [WebPage](https://www.construction-physics.com/p/the-ups-and-downs-of-automated-code)
 - [x] Automated Code Compliance Checking: A computational workflow for verifying model, parameter and regulatory compliance, [WebPage](https://www.academia.edu/101918035/Automated_Code_Compliance_Checking_A_computational_workflow_for_verifying_model_parameter_and_regulatory_compliance), [Saved](Papers/Automated%20Code%20Compliance%20Checking%20A%20computational%20workflow%20for%20verifying%20model,%20parameter%20and%20regulatory%20compliance.pdf)
-- [ ] Automated code compliance checking research based on BIM and knowledge graph, [WebPage](https://www.nature.com/articles/s41598-023-34342-1), [Saved](Papers/Automated%20code%20compliance%20checking%20research%20based%20on%20BIM%20and%20knowledge%20graph.pdf)
+- [x] Automated code compliance checking research based on BIM and knowledge graph, [WebPage](https://www.nature.com/articles/s41598-023-34342-1), [Saved](Papers/Automated%20code%20compliance%20checking%20research%20based%20on%20BIM%20and%20knowledge%20graph.pdf)
 - [ ] Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase, [WebPage](https://papers.cumincad.org/data/works/att/ecaade2022_136.pdf), [Saved](Papers/Establishment%20of%20Database%20for%20Automated%20Building%20Codes%20Compliance%20Checking%20in%20the%20Pre-Design%20Phase.pdf)
 - [ ] Automatic Rule-Based Checking for the Approval of Building Architectural Designs of Airport Passenger Terminals based on BIM, [WebPage](https://papers.cumincad.org/data/works/att/ecaadesigradi2019_613.pdf), [Saved](Papers/Automatic%20Rule-Based%20Checking%20for%20the%20Approval%20of%20Building%20Architectural%20Designs%20of%20Airport%20Passenger%20Terminals%20based%20on%20BIM.pdf)
 - [ ] _Não encontrei_ Past, Present and Future: From Evaluation to Project Validation
@@ -79,3 +79,15 @@ As a limitation, the process currently takes about 30 seconds to check 11 doors.
 
 _Information about how they made regulatory compliance can be found on their section "FINALISED ITERATION – REGULATORY AND CODE COMPLIANCE"_
 
+# Automated code compliance checking research based on BIM and knowledge graph
+
+This paper aim is to transform regulatory text into machine-readable formats, enabling computers to perform efficient and accurate compliance checks on building designs. Regulatory codes are processed with Natural Language Processing (NLP) to extract entities, attributes, and relationships, forming a knowledge graph. BIM model data is exported in IFC format, and converted into machine-readable structures (IFCOWL and RDF) to align with the regulatory knowledge graph. The system uses checking rules (implemented via SPARQL queries) to evaluate if BIM model components conform to the regulatory requirements. Then reports are generated automatically.
+
+It covers regulations from:
+- Uniform Standards for Civil Building Design
+- Code for fire prevention in building design
+- Accessibility Design Code
+- Fire Prevention Code for Building Interior Decoration Design
+- Building Water Supply and Drainage Design Code
+
+It was also able to complete the analysis in short periods of time, less than 10s, and achieve an accuracy above 96%. _Not sure if that is actually good._
