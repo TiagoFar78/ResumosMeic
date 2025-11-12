@@ -4,10 +4,9 @@
 - [x] A rule-based semantic approach for automated regulatory compliance in the construction sector [WebPage](https://pure.aston.ac.uk/ws/files/29320900/Rule_based_semantic_approach.pdf), [Saved](Papers/rule-based%20semantic%20approach%20for%20automated%20regulatory%20compliance%20in%20the%20construction%20sector.pdf)
 - [x] BIM-Based Method for the Verification of Building Code Compliance, [WebPage](https://www.mdpi.com/2571-5577/5/4/64), [Saved](Papers/BIM-Based%20Method%20for%20the%20Verification%20of%20Building%20Code%20Compliance.pdf)
 - [x] A Vision for Automated Building Code Compliance Checking by Unifying Hybrid Knowledge Graphs and Large Language Models, [WebPage](https://www.researchgate.net/publication/395297094_A_Vision_for_Automated_Building_Code_Compliance_Checking_by_Unifying_Hybrid_Knowledge_Graphs_and_Large_Language_Models), [Saved](Papers/A%20Vision%20for%20Automated%20Building%20Code%20Compliance%20Checking%20by%20Unifying%20Hybrid%20Knowledge%20Graphs%20and%20Large%20Language%20Models.pdf)
-- [ ] _Maybe Trash_ The Ups and Downs of Automated Code Checking Software, [WebPage](https://www.construction-physics.com/p/the-ups-and-downs-of-automated-code)
 - [x] Automated Code Compliance Checking: A computational workflow for verifying model, parameter and regulatory compliance, [WebPage](https://www.academia.edu/101918035/Automated_Code_Compliance_Checking_A_computational_workflow_for_verifying_model_parameter_and_regulatory_compliance), [Saved](Papers/Automated%20Code%20Compliance%20Checking%20A%20computational%20workflow%20for%20verifying%20model,%20parameter%20and%20regulatory%20compliance.pdf)
 - [x] Automated code compliance checking research based on BIM and knowledge graph, [WebPage](https://www.nature.com/articles/s41598-023-34342-1), [Saved](Papers/Automated%20code%20compliance%20checking%20research%20based%20on%20BIM%20and%20knowledge%20graph.pdf)
-- [ ] Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase, [WebPage](https://papers.cumincad.org/data/works/att/ecaade2022_136.pdf), [Saved](Papers/Establishment%20of%20Database%20for%20Automated%20Building%20Codes%20Compliance%20Checking%20in%20the%20Pre-Design%20Phase.pdf)
+- [x] Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase, [WebPage](https://papers.cumincad.org/data/works/att/ecaade2022_136.pdf), [Saved](Papers/Establishment%20of%20Database%20for%20Automated%20Building%20Codes%20Compliance%20Checking%20in%20the%20Pre-Design%20Phase.pdf)
 - [ ] Automatic Rule-Based Checking for the Approval of Building Architectural Designs of Airport Passenger Terminals based on BIM, [WebPage](https://papers.cumincad.org/data/works/att/ecaadesigradi2019_613.pdf), [Saved](Papers/Automatic%20Rule-Based%20Checking%20for%20the%20Approval%20of%20Building%20Architectural%20Designs%20of%20Airport%20Passenger%20Terminals%20based%20on%20BIM.pdf)
 - [ ] _Não encontrei_ Past, Present and Future: From Evaluation to Project Validation
 - [ ] _Não encontrei_ Rule-based compliance checking and generative design for building interiors using BIM
@@ -15,8 +14,9 @@
 - [ ] _Não encontrei_ Automatic rule-based checking of building designs
 - [ ] Integrating Regulatory Compliance In AI-Assisted Architectural Design, [WebPage](https://datahub.hku.hk/articles/conference_contribution/2_Integrating_Regulatory_Compliance_In_AI-Assisted_Architectural_Design/29349179?file=55632086), [Saved](Papers/Integrating%20Regulatory%20Compliance%20In%20AI-Assisted%20Architectural%20Design.pdf)
 - [ ] [Model Validation for Automated Building Code Compliance Checking](https://ascelibrary.org/doi/abs/10.1061/9780784483961.067)
-- [ ] _Maybe trash_ [Automated Information Transformation for Automated Regulatory Compliance Checking in Construction](https://ascelibrary.org/doi/abs/10.1061/(ASCE)CP.1943-5487.0000427)
 - [ ] [Towards Automated Compliance Checking in the Construction Industry](https://link.springer.com/chapter/10.1007/978-3-642-40285-2_32)
+- [ ] _Maybe trash_ [Automated Information Transformation for Automated Regulatory Compliance Checking in Construction](https://ascelibrary.org/doi/abs/10.1061/(ASCE)CP.1943-5487.0000427)
+- [ ] _Maybe Trash_ The Ups and Downs of Automated Code Checking Software, [WebPage](https://www.construction-physics.com/p/the-ups-and-downs-of-automated-code)
 
 # Automatic rule verification for digital building permits
 
@@ -91,3 +91,9 @@ It covers regulations from:
 - Building Water Supply and Drainage Design Code
 
 It was also able to complete the analysis in short periods of time, less than 10s, and achieve an accuracy above 96%. _Not sure if that is actually good._
+
+# Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase
+
+The paper proposes a method for automating building code compliance checks in the early stages of architectural design in Korea. The authors develop a process to extract, formalize, and encode natural language requirements from building regulations into a structured, computer-readable database. This enables the use of an authoring tool that provides automatic, real-time legality checks.​
+
+Its current limitations include addressing only simple building compliance factors like size and height. It is also only applied to pre-design phase.
