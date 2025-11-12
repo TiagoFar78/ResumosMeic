@@ -7,12 +7,12 @@
 - [x] Automated Code Compliance Checking: A computational workflow for verifying model, parameter and regulatory compliance, [WebPage](https://www.academia.edu/101918035/Automated_Code_Compliance_Checking_A_computational_workflow_for_verifying_model_parameter_and_regulatory_compliance), [Saved](Papers/Automated%20Code%20Compliance%20Checking%20A%20computational%20workflow%20for%20verifying%20model,%20parameter%20and%20regulatory%20compliance.pdf)
 - [x] Automated code compliance checking research based on BIM and knowledge graph, [WebPage](https://www.nature.com/articles/s41598-023-34342-1), [Saved](Papers/Automated%20code%20compliance%20checking%20research%20based%20on%20BIM%20and%20knowledge%20graph.pdf)
 - [x] Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase, [WebPage](https://papers.cumincad.org/data/works/att/ecaade2022_136.pdf), [Saved](Papers/Establishment%20of%20Database%20for%20Automated%20Building%20Codes%20Compliance%20Checking%20in%20the%20Pre-Design%20Phase.pdf)
+- [x] Integrating Regulatory Compliance In AI-Assisted Architectural Design, [WebPage](https://datahub.hku.hk/articles/conference_contribution/2_Integrating_Regulatory_Compliance_In_AI-Assisted_Architectural_Design/29349179?file=55632086), [Saved](Papers/Integrating%20Regulatory%20Compliance%20In%20AI-Assisted%20Architectural%20Design.pdf)
 - [ ] Automatic Rule-Based Checking for the Approval of Building Architectural Designs of Airport Passenger Terminals based on BIM, [WebPage](https://papers.cumincad.org/data/works/att/ecaadesigradi2019_613.pdf), [Saved](Papers/Automatic%20Rule-Based%20Checking%20for%20the%20Approval%20of%20Building%20Architectural%20Designs%20of%20Airport%20Passenger%20Terminals%20based%20on%20BIM.pdf)
 - [ ] _Não encontrei_ Past, Present and Future: From Evaluation to Project Validation
 - [ ] _Não encontrei_ Rule-based compliance checking and generative design for building interiors using BIM
 - [ ] _Não encontrei_ Automated floorplan generation in architectural design: A review of methods and applications, [WebPage](https://www.sciencedirect.com/science/article/pii/S0926580522002588)
 - [ ] _Não encontrei_ Automatic rule-based checking of building designs
-- [ ] Integrating Regulatory Compliance In AI-Assisted Architectural Design, [WebPage](https://datahub.hku.hk/articles/conference_contribution/2_Integrating_Regulatory_Compliance_In_AI-Assisted_Architectural_Design/29349179?file=55632086), [Saved](Papers/Integrating%20Regulatory%20Compliance%20In%20AI-Assisted%20Architectural%20Design.pdf)
 - [ ] [Model Validation for Automated Building Code Compliance Checking](https://ascelibrary.org/doi/abs/10.1061/9780784483961.067)
 - [ ] [Towards Automated Compliance Checking in the Construction Industry](https://link.springer.com/chapter/10.1007/978-3-642-40285-2_32)
 - [ ] _Maybe trash_ [Automated Information Transformation for Automated Regulatory Compliance Checking in Construction](https://ascelibrary.org/doi/abs/10.1061/(ASCE)CP.1943-5487.0000427)
@@ -97,3 +97,9 @@ It was also able to complete the analysis in short periods of time, less than 10
 The paper proposes a method for automating building code compliance checks in the early stages of architectural design in Korea. The authors develop a process to extract, formalize, and encode natural language requirements from building regulations into a structured, computer-readable database. This enables the use of an authoring tool that provides automatic, real-time legality checks.​
 
 Its current limitations include addressing only simple building compliance factors like size and height. It is also only applied to pre-design phase.
+
+# Integrating Regulatory Compliance In AI-Assisted Architectural Design
+
+The paper presents FU GPT, an AI-enhanced design platform that integrates regulatory compliance into architectural workflows using large language models (LLMs) and a Regulatory Knowledge Graph (RKG). The system supports compliance at different design phases through multiple interactive modes, including Q&A, document analysis, and image generation.
+
+The platform’s key innovation is the Regulatory Knowledge Graph (RKG). Using Named Entity Recognition (NER), manual verification, and XML schema, RKG transforms regulatory knowledge into a layered, structured database. Currently, RKG covers a limited subset only (17 Chinese codes).
