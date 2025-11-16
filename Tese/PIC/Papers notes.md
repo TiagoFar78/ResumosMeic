@@ -9,6 +9,9 @@
 - [x] \* Establishment of Database for Automated Building Codes Compliance Checking in the Pre-Design Phase, [WebPage](https://papers.cumincad.org/data/works/att/ecaade2022_136.pdf), [Saved](Papers/Establishment%20of%20Database%20for%20Automated%20Building%20Codes%20Compliance%20Checking%20in%20the%20Pre-Design%20Phase.pdf)
 - [x] Integrating Regulatory Compliance In AI-Assisted Architectural Design, [WebPage](https://datahub.hku.hk/articles/conference_contribution/2_Integrating_Regulatory_Compliance_In_AI-Assisted_Architectural_Design/29349179?file=55632086), [Saved](Papers/Integrating%20Regulatory%20Compliance%20In%20AI-Assisted%20Architectural%20Design.pdf)
 - [x] \* Automated Information Transformation for Automated Regulatory Compliance Checking in Construction [WebPage](https://2024.sci-hub.se/4345/9a1917b6d7a674f83044191ac35a5c8d/zhang2015.pdf)
+- [ ] Development and analysis of an automated performance code checking workflow [WebPage](https://www.academia.edu/123546896/Development_and_analysis_of_an_automated_performance_code_checking_workflow?email_work_card=title)
+- [ ] Lessons Learned on Adopting Automated Compliance Checking in the AEC Industry: A Global Study [WebPage](https://ascelibrary.org/doi/10.1061/JMENEA.MEENG-5051)
+- [ ] Automated code compliance checking through building information modelling [WebPage](https://www.emerald.com/jstbu/article-abstract/177/9/822/1232323/Automated-code-compliance-checking-through?redirectedFrom=fulltext)
 - [ ] Automatic Rule-Based Checking for the Approval of Building Architectural Designs of Airport Passenger Terminals based on BIM, [WebPage](https://papers.cumincad.org/data/works/att/ecaadesigradi2019_613.pdf), [Saved](Papers/Automatic%20Rule-Based%20Checking%20for%20the%20Approval%20of%20Building%20Architectural%20Designs%20of%20Airport%20Passenger%20Terminals%20based%20on%20BIM.pdf)
 - [ ] _Não encontrei_ Past, Present and Future: From Evaluation to Project Validation
 - [ ] _Não encontrei_ Rule-based compliance checking and generative design for building interiors using BIM
@@ -16,6 +19,9 @@
 - [ ] _Não encontrei_ Automatic rule-based checking of building designs
 - [ ] [Model Validation for Automated Building Code Compliance Checking](https://ascelibrary.org/doi/abs/10.1061/9780784483961.067)
 - [ ] [Towards Automated Compliance Checking in the Construction Industry](https://link.springer.com/chapter/10.1007/978-3-642-40285-2_32)
+- [ ] \* Requirements of Machine Learning and Semantic Enrichment for BIM-Based Automated Code Compliance Checking: A Focus Group Study [WebPage](https://www.academia.edu/papers/242453754?email_work_card=title)
+- [ ] \* High-level implementable methods for automated building code compliance checking [WebPage](https://www.academia.edu/papers/237029219?email_work_card=title)
+- [ ] \* Rule capture of automated compliance checking of building requirements: a review [WebPage](https://www.academia.edu/papers/239281431?email_work_card=title)
 - [ ] _Maybe Trash_ The Ups and Downs of Automated Code Checking Software, [WebPage](https://www.construction-physics.com/p/the-ups-and-downs-of-automated-code)
 
 \* Papers that tackle translating semantic rules into formal computational representations.
