@@ -12,6 +12,7 @@
 - [x] Development and analysis of an automated performance code checking workflow [WebPage](https://www.academia.edu/123546896/Development_and_analysis_of_an_automated_performance_code_checking_workflow?email_work_card=title)
 - [x] Lessons Learned on Adopting Automated Compliance Checking in the AEC Industry: A Global Study [WebPage](https://discovery.ucl.ac.uk/id/eprint/10165736/1/2023-JME-Lessons%20Learned%20on%20Adopting%20Automated%20Compliance1%20Checking%20in%20AEC%20Industry-A%20Global%20Study_Zou.pdf)
 - [x] Automated code compliance checking through building information modelling [WebPage](https://www.emerald.com/jstbu/article-abstract/177/9/822/1232323/Automated-code-compliance-checking-through?redirectedFrom=fulltext)
+- [x] PARAMETRIC MODELLING IN CONSTRUCTION: INVESTIGATING THE QUALITY OF RULE-BASED CHECKING [WebPage](https://www.academia.edu/41370950/PARAMETRIC_MODELLING_IN_CONSTRUCTION_INVESTIGATING_THE_QUALITY_OF_RULE_BASED_CHECKING?email_work_card=view-paper)
 - [ ] Automatic Rule-Based Checking for the Approval of Building Architectural Designs of Airport Passenger Terminals based on BIM, [WebPage](https://papers.cumincad.org/data/works/att/ecaadesigradi2019_613.pdf), [Saved](Papers/Automatic%20Rule-Based%20Checking%20for%20the%20Approval%20of%20Building%20Architectural%20Designs%20of%20Airport%20Passenger%20Terminals%20based%20on%20BIM.pdf)
 - [ ] _Não encontrei_ Past, Present and Future: From Evaluation to Project Validation
 - [ ] _Não encontrei_ Rule-based compliance checking and generative design for building interiors using BIM
@@ -131,3 +132,9 @@ This paper investigates the global adoption of Automated Compliance Checking tec
 # Automated code compliance checking through building information modelling
 
 This paper evaluates the potential of BIM and automated checking tools to streamline and improve compliance procedures, specifically in Pakistan. The authors propose an end-to-end automated code compliance checking process that integrates BIM and visual programming, specifically Autodesk Revit and Dynamo and and Excel-based rule checking. And it had the same problems as all the others that tried the same thing: it wouldn't work in a large scale.
+
+# PARAMETRIC MODELLING IN CONSTRUCTION: INVESTIGATING THE QUALITY OF RULE-BASED CHECKING
+
+This paper examines how well rule-based, semi-automatic checking is currently used to assure the quality of building information models in the AEC industry, with a particular focus on Solibri Model Checker and IFC-based workflows. It reviews approaches to turning regulations into computable rules (manual logic and natural language–based methods), surveys available checking software, and assembles a quality framework from existing BIM and quality standards to structure rule authoring and validation.
+
+The findings show that design information is widely perceived as poor but improving, with checking still dominated by manual work (around an 80/20 manual/automatic split). 
