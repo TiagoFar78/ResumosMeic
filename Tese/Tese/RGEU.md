@@ -122,4 +122,68 @@ vezes que dimensão? A largura? A largura é o 0m11
 
 # 30
 
-todo
+> Todas as paredes em elevação, quando não sejam construídas com material preparado para ficar à vista, serão guarnecidas, tanto interior como exteriormente, com revestimentos apropriados, de natureza, qualidade e espessura tais que, pela sua resistência à acção do tempo, garantam a manutenção das condições iniciais de salubridade e bom aspecto da edificação.
+> 1. Os revestimentos exteriores serão impermeáveis sempre que as paredes estejam expostas à acção frequente de ventos chuvosos.
+> 2. O revestimento exterior das paredes das mansardas ou das janelas de trapeira será de material impermeável, com reduzida condutibilidade calorífera e resistente à acção dos agentes atmosféricos e ao fogo.
+
+### Regras
+
+1. `foreachWallSide(isRevestidaApropriadamente(wall))`
+2. `foreachWallSide(!isExterior(wall) || hasRevestimentoImpermeavel(wall))`
+3. 
+    ```
+    foreachWall(!isMansarda(wall) || 
+        foreachWallSide(!isExterior(wallSide) || 
+            (hasRevestimentoImpermeavel(wallSide) &&
+            hasRevestimentoWithReduzidaCondutibilidadeCalorífera(wallSide) && 
+            hasFireResistantRevestimento(wallSide))
+        )
+    )
+    ```
+
+# 31.
+
+> As paredes das casas de banho, retretes, copas, cozinhas e locais de lavagem são revestidas, até, pelo menos, à altura de 1,50 m, com materiais de revestimento impermeáveis à água e à humidade e de fácil limpeza.
+
+### Regras
+
+0. `RoomWithWater = Casa de banho || Retrete || Copa || Cozinha || Locais de lavagem`
+1. 
+    ```
+    foreachWallSide(!isFacingRoomWithWater(wallside) || (
+        revestimentoHeight(wallSide) >= 1.5m &&
+        hasRevestimentoImpermeavel(wallSide) &&
+        hasRevestimentoAntiHumidade(wallSide) &&
+        hasRevestimentoDeFacilLimpeza(wallSide))
+    )
+    ```
+
+# 32.
+
+> Os paramentos exteriores das fachadas que marginem as vias públicas mais importantes designadas em postura municipal serão guarnecidos inferiormente de pedra aparelhada ou de outro material resistente ao desgaste e fácil de conservar limpo e em bom estado.
+
+### Regras
+
+1. 
+    ```
+    foreachWallSide(!isMarginOfImporantStreet(wallSide) || (
+        guarnecimentoHeight(wallSide) > 0) && 
+        (guarnecimentoOfPedraAparelhada(wallSide) || isGuarnecimentoResistant(wallSide))
+    )
+    ```
+
+# 33.
+
+> No guarnecimento dos vãos abertos em paredes exteriores deve ser assegurada a adequada fixação dos sistemas destes, de modo a garantir a resistência a estanquidade e o isolamento dos mesmos.
+
+### Dúvidas
+
+A fixação é um processo separado do design, certo?
+
+# 34.
+
+> Todas as cantarias aplicadas em guarnecimento de vãos ou revestimento de paredes serão ligadas ao material das mesmas paredes por processos que dêem suficiente garantia de solidez e duração.
+
+### Dúvidas
+
+O processo usado para estas ligações é irrelevante para o design, certo?
