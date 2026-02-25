@@ -24,10 +24,6 @@ Isto quer dizer que o terreno não pode ser areia? O que é que seria um terreno
 
 Quando é que não permitem? Que condições são estas?
 
-> ... excepto quando se trate de rocha dura, onde poderá ser menor.
-
-Menor? É suposto eu inventar um valor qualquer para isto, tipo 25cm?
-
 > não exceda a carga de segurança admissível para o terreno de fundação
 
 Isto tem um valor? Muda para cada terreno de fundação?
@@ -39,7 +35,7 @@ Dá para fazer isto sem ser com "intercalar-se entre eles e as paredes uma camad
 ### Regras
 
 1. `zCabouco = z(terreno) - z(fundo do cabouco)`<br>
-`isRochaDura(terreno) ? <vAlOr MeNoR> : zCabouco >= 50cm`
+`isRochaDura(terreno) ? zCabouco > 0 : zCabouco >= 50cm`
 2. `pressure(fundo do cabouco) <= <CaRgA dE sEgUrAnÇa AdMiSsÍvEl>`
 3. TODO A regra de intercalar ?
 4. `isAlvernariaHidraulica(alicerces e paredes até 50cm)`
@@ -64,11 +60,19 @@ Espessura de paredes de alvenaria de pedra ou de tijolo (não incluídos rebocos
 
 > Ordem de andar (a partir de cima)
 
-Acima do 7º é para considerar as regras do 7º?
+Abaixo do 7º é para considerar as regras do 7º?
 
 > Tijolo vezes
 
-vezes que dimensão? A largura? A largura é o 0m11
+vezes que dimensão? A largura? A largura é o 0m11?
+
+> 2.º É permitido o emprego de alvenaria mista de tijolo maciço e furado nas paredes dos grupos A e B
+
+vou assumir que todos os tijolos têm as mesmas dimensões. também se não fosse assim a parede ia ficar super esquisita com deformações. Está ok?
+
+> 3.º É permitido o emprego de tijolo furado
+
+Com as mesmas dimensões do tijolo maciço?
 
 ### Regras
 
@@ -125,6 +129,12 @@ vezes que dimensão? A largura? A largura é o 0m11
 > Todas as paredes em elevação, quando não sejam construídas com material preparado para ficar à vista, serão guarnecidas, tanto interior como exteriormente, com revestimentos apropriados, de natureza, qualidade e espessura tais que, pela sua resistência à acção do tempo, garantam a manutenção das condições iniciais de salubridade e bom aspecto da edificação.
 > 1. Os revestimentos exteriores serão impermeáveis sempre que as paredes estejam expostas à acção frequente de ventos chuvosos.
 > 2. O revestimento exterior das paredes das mansardas ou das janelas de trapeira será de material impermeável, com reduzida condutibilidade calorífera e resistente à acção dos agentes atmosféricos e ao fogo.
+
+### Dúvidas
+
+> frequente de ventos chuvosos
+
+Sendo que não há uma métrica real para isto, mais vale só assumir que é sempre certo?
 
 ### Regras
 
@@ -187,3 +197,47 @@ A fixação é um processo separado do design, certo?
 ### Dúvidas
 
 O processo usado para estas ligações é irrelevante para o design, certo?
+
+# Informação necessária para tratar das regras sobre paredes
+
+Wall:
+- Piso (a contar de cima)
+- IsInMansarda
+- Grupo
+  - A -> 0
+  - B -> 1
+  - ...
+  - E -> 4
+- Material
+  - Alvenaria de pedra Talhada -> 0
+  - Alvenaria de pedra Irregular -> 1
+  - Tijolo cerâmico maciço de 1.ª qualidade com dimensões 0m,23 x 0m,ll x 0m,07 -> 2
+  - Tijolo cerâmico maciço de 1.ª qualidade com outras dimensões -> 3
+  - Alvenaria de pedra mista com tijolo maciço e furado -> 4
+  - Tijolo cerâmico maciço de 1.ª qualidade com outras dimensões -> 5
+  - Outro -> 6
+- IsPedraRija (se não se aplicar, por exemplo, para os tijolos, deve ser false)
+- Espessura
+- IsEspessuraExternallyApproved (para tratar dos casos em que se fazem testes em laboratório a justificar espessuras inferiores)
+- AlturaLivre
+- Sobrecarga (em kg / m^2)
+- IsResistanceEnsured
+- IsOnEstruturaIndependeteDeBetãoArmadoOuMetálica
+- ComprimentoLivre
+- Side1
+- Side2
+
+Side:
+  - Facing
+    - Exterior terreno -> 0
+    - Exterior ar -> 1
+    - Casas de banho, Retretes, Copas, Cozinhas e Locais de lavagem -> 2
+    - Vias públicas mais importantes -> 3
+  - HasGuarnecimento
+  - HasGuarnecimentoResistenteAoDesgaste
+  - RevestimentoHeight
+  - HasRevestimentoImpermeavel
+  - HasRevestimentoComReduzidaCondutibilidadeCalorífera
+  - HasRevestimentoResistenteAAgentesAtmosféricosEAoFogo
+  - HasRevestimentoImpermeavelAHumidade
+  - HasRevestimentoDeFacilLimpeza (provavelmente para ignorar)
